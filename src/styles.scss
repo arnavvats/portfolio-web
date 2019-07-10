@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.xl-text {
+  font-size: 3.5rem;
+}
+.fg-grey {
+  color: #bababa;
+}
+a {
+  color: black !important;
+}
+.l-white {
+  color: white !important;
+}
+.bg-none {
+  background: none !important;
+}
+.h-1em {
+  height: 1em !important;
+}
+.im-white {
+  filter:  brightness(0) invert(1);
+}
+.l-text {
+  font-size: 1.5em;
+}

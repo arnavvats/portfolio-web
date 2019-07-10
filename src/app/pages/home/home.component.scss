@@ -1,6 +1,21 @@
 :host {
   flex-grow: 1;
   display: flex;
-  background: black;
+  flex-direction: row-reverse;
   color: white;
+  background: #2e3d44 url("../../../assets/images/favicon.png") left bottom no-repeat fixed;
+  background-size: 80vh auto;
+  font-family: 'Open Sans', sans-serif;
+  .content-desc {
+    background: #2e3d448f;
+    @media(min-width: 768px) {
+      min-width: 50%;
+    }
+    @media(max-width: 767px) {
+      min-width: 75%;
+    }
+    ul li:nth-child(n+2){
+      margin-left: 0.25em;
+    }
+  }
 }
