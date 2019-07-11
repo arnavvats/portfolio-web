@@ -3,16 +3,28 @@ import { CommonModule } from '@angular/common';
 import { TourComponent } from './tour.component';
 import {RouterModule, Routes} from '@angular/router';
 import {SharedModule} from '../../shared/shared.module';
-import { ExperienceComponent } from './experience/experience.component';
 const routes: Routes = [
   {
-    path: '', component: TourComponent,
-  }, {
-    path: '**', redirectTo: ''
+    path: 'home', component: TourComponent,
+  },
+  {
+    path: 'experience', loadChildren: () => import('./experience/experience.module').then(m => m.ExperienceModule)
+  },
+  {
+    path: 'achievements', loadChildren: () => import('./achievements/achievements.module').then(m => m.AchievementsModule)
+  },
+  {
+    path: 'certifications', loadChildren: () => import('./certifications/certifications.module').then(m => m.CertificationsModule)
+  },
+  {
+    path: 'skills', loadChildren: () => import('./skills/skills.module').then(m => m.SkillsModule)
+  },
+  {
+    path: '**', redirectTo: 'home'
   }
 ];
 @NgModule({
-  declarations: [TourComponent, ExperienceComponent],
+  declarations: [TourComponent],
   imports: [
     CommonModule,
     SharedModule,

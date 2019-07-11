@@ -1,1 +1,57 @@
-<p>skills works!</p>
+<div class="d-flex p-5 w-100 flex-column justify-content-center">
+  <div class="row mt-0 pt-1 pb-1">
+    <a routerLink="/tour" class="l-white d-flex align-items-center no-deco">
+      <i class="fa fa-3x fa-arrow-circle-left"></i>
+      &nbsp;&nbsp;Back to Tour
+    </a>
+  </div>
+  <div class="row mb-3 justify-content-center">
+    <h4><em>Subject Matter Expertise:</em></h4>
+    <div class="col-12 row justify-content-center"> <h4>{{subjectMatters.join(',')}}</h4></div>
+  </div>
+  <div class="row justify-content-center">
+    <h4><em>Data Science:</em></h4>
+
+    <div class="col-12 row justify-content-center">
+      <div class="text-center p-2 sklist " *ngFor="let tool of skills.datascience">
+        <img [src]="'assets/images/' + tool.image" class="pb-2"/>
+        <p [class]="tool.level">{{tool.level}}</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="row justify-content-center">
+    <h4><em>Web Development:</em></h4>
+
+    <div class="col-12 row justify-content-center">
+      <div class="text-center p-2 sklist " *ngFor="let tool of skills.web">
+        <img [src]="'assets/images/' + tool.image" class="pb-2 "/>
+        <p [class]="tool.level">{{tool.level}}</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row justify-content-center">
+    <h4><em>DevOps:</em></h4>
+
+    <div class="col-12 row justify-content-center">
+      <div class="text-center p-2 sklist " *ngFor="let tool of skills.devOps">
+        <img [src]="'assets/images/' + tool.image"  class="pb-2 "/>
+        <p [class]="tool.level">{{tool.level}}</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="row justify-content-center">
+    <h4><em>Programming Languages:</em></h4>
+
+    <div class="col-12 row justify-content-center">
+      <div class="text-center p-2 sklist" *ngFor="let tool of skills.programmingLanguages">
+        <img [src]="'assets/images/' + tool.image" class="pb-2 "/>
+        <p [class]="tool.level">{{tool.level}}</p>
+      </div>
+    </div>
+
+  </div>
+</div>

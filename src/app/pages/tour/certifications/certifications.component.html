@@ -1,1 +1,15 @@
-<p>certifications works!</p>
+<div class=" p-3">
+  <a routerLink="/tour" class="l-white d-flex align-items-center no-deco">
+    <i class="fa fa-3x fa-arrow-circle-left"></i>
+    &nbsp;&nbsp;Back to Tour
+  </a>
+</div>
+<div class="p-3">
+  <div class="row">
+    <h1 class="pt-2 text-center text-uppercase col-12 pb-4">Certifications</h1>
+    <div class="col-12 col-md-6 col-lg-3 pr-2 pb-2" *ngFor="let certi of certificates">
+      <h5>{{certi.certification}}</h5>
+      <p><em>Published by:</em>&nbsp;{{certi.publisher}}</p>
+    </div>
+  </div>
+</div>

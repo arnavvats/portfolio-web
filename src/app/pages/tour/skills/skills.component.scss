@@ -1,0 +1,30 @@
+:host {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Open sans', sans-serif;
+  background: #05131e url('../../../../assets/images/coder-2.jpg') no-repeat right fixed;
+  background-size: contain;
+
+  color: white;
+}
+.advanced {
+  color: #dc3545;
+}
+.beginner {
+  color: #dadada;
+}
+.intermediate {
+  color: orange;
+}
+.sklist p {
+  font-family: 'Russo One', sans-serif;
+}
+.sklist img {
+  @media(min-width: 768px) {
+    max-height: 5em;
+  }
+  @media(max-width: 767px) {
+    max-height: 3em;
+  }
+}

@@ -1,1 +1,25 @@
-<p>experience works!</p>
+<div class=" p-3">
+  <a routerLink="/tour" class="l-white d-flex align-items-center no-deco">
+    <i class="fa fa-3x fa-arrow-circle-left"></i>
+    &nbsp;&nbsp;Back to Tour
+  </a>
+  <h2 class="col-12 text-center text-uppercase text-center">Projects</h2>
+  <div class="col-12 row pt-2">
+    <div *ngFor="let project of projects" class="col-xl-3 col-lg-6 col-12 project-card p-3  project">
+      <h4>{{project.title}}</h4>
+      <p>{{project.description}}</p>
+      <span>
+        <a *ngIf="project.link" [href]="project.link" class="l-white mr-3"><i class="fa fa-2x fa-external-link"></i> </a>
+        <a *ngIf="project.github" [href]="project.github" class="l-white"><i class="fa fa-2x fa-github"></i> </a>
+      </span>
+    </div>
+  </div>
+  <h2 class="col-12 text-center text-uppercase text-center pt-2">Experiences</h2>
+  <div class="col-12 row pt-2">
+    <div *ngFor="let exp of experiences" class="col-xl-3 col-lg-6 col-12 project-card p-3  project">
+      <h4>{{exp.title}}</h4>
+      <p>{{exp.description}}</p>
+    </div>
+  </div>
+</div>
+
