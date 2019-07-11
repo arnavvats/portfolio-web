@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  .content-main{
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    &:hover {
+      background: #1d1010;
+      box-shadow: 0px 0px 5px 1px #766767;
+    }
+    text-decoration: none !important;
+  }
+}

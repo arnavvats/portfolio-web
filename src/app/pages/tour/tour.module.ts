@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TourComponent } from './tour.component';
-import {Routes} from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
+import {SharedModule} from '../../shared/shared.module';
+import { ExperienceComponent } from './experience/experience.component';
 const routes: Routes = [
   {
     path: '', component: TourComponent,
@@ -10,9 +12,11 @@ const routes: Routes = [
   }
 ];
 @NgModule({
-  declarations: [TourComponent],
+  declarations: [TourComponent, ExperienceComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule,
+    RouterModule.forChild(routes)
   ]
 })
 export class TourModule { }

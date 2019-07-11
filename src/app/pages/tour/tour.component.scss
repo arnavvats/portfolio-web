@@ -1,0 +1,12 @@
+:host {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  background: #201919;
+
+}
+app-tour-card {
+  margin-bottom: 0.5rem;
+}

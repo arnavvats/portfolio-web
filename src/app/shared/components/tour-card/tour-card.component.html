@@ -1,0 +1,12 @@
+<a class="row content-main l-white" [routerLink]="'/tour/' + data.route">
+  <div class="col-5 d-flex flex-column justify-content-center">
+    <img src="assets/images/dumbbell.png" class="im-gray img-fluid" [src]="'assets/images/' + data.image">
+  </div>
+  <div class="col-7">
+    <h3>{{data.title}}</h3>
+    <br>
+    <p class="fg-grey">{{data.description}}</p>
+    <br>
+    <p class="l-white">Explore &nbsp; <i class="fa fa-arrow-circle-right"></i> </p>
+  </div>
+</a>

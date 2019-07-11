@@ -22,6 +22,9 @@ a {
 .im-white {
   filter:  brightness(0) invert(1);
 }
+.im-gray {
+  filter: brightness(0) invert(0.6);
+}
 .l-text {
   font-size: 1.5em;
 }

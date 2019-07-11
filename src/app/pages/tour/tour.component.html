@@ -1,1 +1,6 @@
-<p>tour works!</p>
+<div class="d-flex p-5 w-100 flex-column justify-content-center">
+  <div class="row">
+    <app-tour-card class="col-lg-3 col-md-6 col-12" *ngFor="let tour of tourPaths" [data]="tour"></app-tour-card>
+
+  </div>
+</div>
